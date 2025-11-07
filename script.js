@@ -19,7 +19,9 @@ function buscar() {
             
         })
         .catch(erro => {
+            new Audio("erro.wav").play()
             alert("Não Foi Possivel Verificar esse CEP (Tente Novamente)")
+            
         })
 
 
